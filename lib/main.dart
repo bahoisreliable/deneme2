@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'GitHub Deneme Home Page'),
+      home: MyHomePage(title: 'Sikişs Home Page'),
     );
   }
 }
