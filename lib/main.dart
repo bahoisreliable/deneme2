@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:githubdeneme/sekme.dart';
 
 void main() {
   runApp(MyApp());
@@ -52,6 +53,14 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            RaisedButton.icon(
+              icon: Icon(Icons.airplanemode_active),
+              label: Text("ucuyosun melih"),
+              color: Colors.blueAccent,
+              disabledColor: Colors.amber,
+              onPressed: () => Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Sekme())),
+            )
           ],
         ),
       ),
@@ -59,7 +68,8 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
+      // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
